@@ -1,29 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Reddit+Mono:wght@600&display=swap');
 
 * {
-    font-family: "Raleway";
+    overflow: hidden;
 }
 
+span {
+    font-family: "Raleway";
+}
 
 body {
     font-family: "Raleway", sans-serif;
     margin: auto;
-    background: #000000 url("bg2.png") center center;
-    height: 100%;
-    background-size: cover;
     overflow: hidden;
-    /*filter: blur(10px);
-    -webkit-filter:  blur(10px);
-    -moz-filter:  blur(10px);
-    -o-filter:  blur(10px);
-    -ms-filter: blur(10px);*/
     text-shadow: 1px 1px 2px black;
 }
 
-body, html {
+body, html, #container, #blur-wrap, #for-welcome {
     height: 100%;
     width: 100%;
-    
+}
+
+#for-welcome {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    backdrop-filter: blur(50px);
+}
+
+
+#welcome-sign {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: xx-large;
+    text-align:center;
+    margin-top: 450px;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#container {
+    background: #000000 url("bg2.png") center center;
+    background-size: cover;
+}
+
+
+#blur-wrap {
+    /*backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.3);*/
+    background-size: cover;
+    position: relative;
+}
+
+#pfpdiv {
+    overflow: hidden;
+    clear: both;
 }
 
 
@@ -39,27 +72,25 @@ header h1 {
     font-family: sans-serif;
     text-align: center;
     font-family: "Raleway", sans-serif;
+    clear: both;
 }
 
 #pfp {
     width: 150px;
     height: 150px;
     display: block;
-    margin-top: 5%;
     border-radius: 100%;
+    margin-top: 2%;
     margin-left: auto;
     border: 10px solid #201f1f38;
     margin-right: auto;
 }
 
 .icons2 {
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-    border-radius: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
     margin-left: auto;
-    margin-right: auto;
-
     color: #FFFFFF;
     transition: transform .2s;
 }
@@ -81,9 +112,15 @@ header h1 {
     cursor: pointer;
 }
 
+.icons2:hover {
+    transform:scale(1.1);
+    cursor: pointer;
+}
+
 #icon{
     text-align:center;
 }
+
 
 .quote, #app, #ip {
     color: white;
@@ -94,7 +131,7 @@ header h1 {
 }
 
 marquee {
-    width: 20%;
+    width: 30%;
     color: black;
     display: inline-block;
 }
@@ -102,13 +139,14 @@ marquee {
 
 pre {
     color: black;
-    width: 100%;
-    height: 150px;
-    margin-left: 40%;
-    margin-top: 50px;
-    position: absolute;
+    width: 61%;
+    height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    float: right;
+    position: relative;
     bottom: 0;
-    margin-right: 40%;
+
 }
 
 #for-iframe {
