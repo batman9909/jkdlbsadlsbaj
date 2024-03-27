@@ -1,4 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Reddit+Mono:wght@600&display=swap');
+
+* {
+    font-family: "Raleway";
+}
+
+
 body {
+    font-family: "Raleway", sans-serif;
     margin: auto;
     background: #000000 url("bg2.png") center center;
     height: 100%;
@@ -14,7 +22,9 @@ body {
 body, html {
     height: 100%;
     width: 100%;
+    
 }
+
 
 header {
     width: 100%;
@@ -24,8 +34,10 @@ header {
 
 header h1 {
     color: white;
+    font-weight: 300;
     font-family: sans-serif;
     text-align: center;
+    font-family: "Raleway", sans-serif;
 }
 
 #pfp {
@@ -39,15 +51,26 @@ header h1 {
     margin-right: auto;
 }
 
-.icons {
-    width: 32px;
-    height: 32px;
+.icons2 {
+    width: 40px;
+    height: 40px;
     display: inline-block;
-    border-radius: 16px;
-    background-color: white;
+    border-radius: 20px;
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid white;
+
+    color: #FFFFFF;
+    transition: transform .2s;
+}
+
+.icons {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 10px;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    color: #FFFFFF;
     transition: transform .2s;
 }
 
