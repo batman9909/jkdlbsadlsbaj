@@ -1,0 +1,103 @@
+body {
+    margin: auto;
+    background: #000000 url("bg2.png") center center;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+    /*filter: blur(10px);
+    -webkit-filter:  blur(10px);
+    -moz-filter:  blur(10px);
+    -o-filter:  blur(10px);
+    -ms-filter: blur(10px);*/
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+header h1 {
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#pfp {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-top: 5%;
+    border-radius: 100%;
+    margin-left: auto;
+    border: 10px solid #201f1f38;
+    margin-right: auto;
+}
+
+.icons {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    border-radius: 16px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid white;
+    transition: transform .2s;
+}
+
+
+.icons:hover {
+    transform:scale(1.1);
+    cursor: pointer;
+}
+
+#icon{
+    text-align:center;
+}
+
+.quote, #app, #ip {
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: large;
+    
+}
+
+marquee {
+    width: 20%;
+    color: black;
+    display: inline-block;
+}
+
+
+pre {
+    color: black;
+    width: 100%;
+    height: 150px;
+    margin-left: 40%;
+    margin-top: 50px;
+    position: absolute;
+    bottom: 0;
+    margin-right: 40%;
+}
+
+#for-iframe {
+    width: 100%;
+    margin-top: 3%;
+}
+
+iframe {
+    margin-left: 30%; 
+    margin-right: 30%; 
+    display: inline-block;
+}
+
+#playbutton {
+    margin-top: 3%;
+}
