@@ -1,4 +1,4 @@
-let toggle = true;
+let toggle = false;
 
 
 function sleep(ms) {
@@ -11,7 +11,7 @@ fetch('https://api.ipify.org?format=json')
         if(toggle == true)
          document.getElementById('ip').innerHTML = data.ip;
         else
-        document.getElementById('ip').innerHTML = "ip xd";
+        document.getElementById('ip').innerHTML = "";
 });
 
 function play(){

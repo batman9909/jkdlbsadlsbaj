@@ -4,13 +4,14 @@ var typewriter = new Typewriter(app, {
     loop: true
 });
 
-typewriter.typeString('Motion')
-    .pauseFor(500)
+
+typewriter.typeString('Exiled')
+    .pauseFor(200)
     .deleteAll()
-    .typeString('over')
-    .pauseFor(500)
+    .typeString('from')
+    .pauseFor(200)
     .deleteAll()
-    .typeString('emotion.')
-    .pauseFor(500)
+    .typeString('heaven.')
+    .pauseFor(200)
     .deleteAll()
     .start();

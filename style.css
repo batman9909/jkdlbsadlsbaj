@@ -42,7 +42,7 @@ body, html, #container, #blur-wrap, #for-welcome {
 }
 
 #container {
-    background: #000000 url("bg2.png") center center;
+    background: #000000 url("graybg.png") center center;
     background-size: cover;
 }
 
